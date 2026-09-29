@@ -1,117 +1,207 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Plotbird | Aerial Mapping & Property Imagery</title>
-  <meta name="description" content="Plotbird provides aerial mapping, photogrammetry, rural imagery and property media across Christchurch and Canterbury.">
-  <meta name="theme-color" content="#f4f1e8">
-  <link rel="canonical" href="https://plotbird.co.nz/">
-  <meta property="og:title" content="Plotbird | Aerial Mapping & Property Imagery">
-  <meta property="og:description" content="Aerial mapping, photogrammetry, rural imagery and property media across Christchurch and Canterbury.">
-  <meta property="og:url" content="https://plotbird.co.nz/">
-  <meta property="og:type" content="website">
-  <style>
-    :root{--cream:#f4f1e8;--paper:#fbfaf6;--ink:#232a2d;--muted:#68706c;--green:#58712c;--green2:#74894c;--line:#d7d4c9;--radius:26px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
-    img{display:block;max-width:100%} a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
-    header{position:sticky;top:0;z-index:20;background:rgba(244,241,232,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(35,42,45,.08)}
-    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{font-weight:900;letter-spacing:-.05em;font-size:30px}.brand b{color:var(--green)}
-    .links{display:flex;gap:26px;align-items:center;font-weight:700;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;border-radius:999px;padding:14px 20px;font-weight:800}.btn:hover{transform:translateY(-1px)}
-    .hero{padding:95px 0 80px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900;color:var(--green);margin:0 0 16px}
-    h1,h2,h3{letter-spacing:-.045em;line-height:1.02;margin-top:0}h1{font-size:clamp(54px,7vw,92px);margin-bottom:24px}h2{font-size:clamp(40px,5vw,62px);margin-bottom:18px}h3{font-size:25px;margin-bottom:10px}
-    .lead{font-size:21px;color:#4c5551;max-width:620px}.hero-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:30px}.text-link{font-weight:800;border-bottom:1px solid #8f958f;padding-bottom:3px}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:32px}.chips span{border:1px solid #c7c9bf;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:700;background:rgba(255,255,255,.35)}
-    .photo{position:relative;background:white;border:1px solid rgba(35,42,45,.12);border-radius:32px;padding:12px;box-shadow:0 26px 80px rgba(35,42,45,.14);transform:rotate(1deg)}.photo img{width:100%;aspect-ratio:1.18/1;object-fit:cover;border-radius:22px}
-    .badge{position:absolute;background:var(--ink);color:white;border-radius:14px;padding:11px 13px;display:flex;flex-direction:column;line-height:1.15;box-shadow:0 10px 30px rgba(0,0,0,.18)}.badge strong{font-size:18px}.badge span{font-size:10px;color:#cbd0cd;text-transform:uppercase;letter-spacing:.08em;margin-top:4px}.b1{right:-16px;top:62px}.b2{left:-16px;bottom:58px}
-    .micro{font-size:11px;color:#7b817d;text-align:center;margin:14px 0 0}.strip{background:var(--paper);border-block:1px solid var(--line);padding:20px 0}.strip .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}.strip p{font-weight:800;margin:0}
-    section{padding:105px 0}.heading{display:grid;grid-template-columns:1.05fr .8fr;gap:80px;align-items:end;margin-bottom:46px}.heading p:last-child{font-size:18px;color:#5f6864;margin:0}
-    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:rgba(255,255,255,.52);border:1px solid var(--line);border-radius:var(--radius);padding:32px;min-height:320px}.card.feature{background:var(--green);color:white;border-color:var(--green)}.card p{color:#5f6864}.card.feature p{color:#e6eadc}.card ul{padding-left:18px}
-    .examples{background:var(--paper);border-top:1px solid var(--line)}.feature-case{display:grid;grid-template-columns:1.12fr .88fr;background:var(--ink);color:white;border-radius:30px;overflow:hidden;margin-bottom:18px}.feature-case img{width:100%;height:100%;min-height:510px;object-fit:cover}.case-copy{padding:52px;display:flex;flex-direction:column;justify-content:center}.case-copy p{color:#c5cdca}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid rgba(255,255,255,.15);padding-top:24px;margin-top:24px}.stats strong{display:block;font-size:21px}.stats span{font-size:11px;color:#aeb6b2;text-transform:uppercase}
-    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--cream)}.project img{width:100%;height:260px;object-fit:cover}.project div{padding:23px}.project p{margin:0;color:#68706c}
-    .dark{background:var(--ink);color:white}.outcomes{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}.dark p{color:#bbc3bf}.outcome{padding:22px 0;border-top:1px solid rgba(255,255,255,.14)}
-    .about{background:var(--paper)}.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:center}.mark{width:290px;height:290px;border-radius:50%;background:#e4e7d7;display:grid;place-items:center}.mark span{font-size:92px;font-weight:900;color:var(--green);transform:rotate(-6deg)}
-    .contact{padding-top:82px}.contact-box{background:#dfe4d2;border:1px solid #cfd6be;border-radius:32px;padding:50px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center}.contact-box p{color:#596255}.email{font-weight:800;color:var(--green);margin-top:10px}
-    footer{padding:38px 0;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;gap:24px;color:#707672;font-size:13px}
-    @media(max-width:850px){.links a:not(.btn){display:none}.hero-grid,.heading,.feature-case,.outcomes,.about-grid,.contact-box{grid-template-columns:1fr}.hero{padding-top:65px}.services{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr 1fr}.feature-case img{min-height:380px}.about-grid{gap:34px}.mark{display:none}}
-    @media(max-width:560px){.wrap{width:min(100% - 26px,1180px)}.nav{height:72px}.brand{font-size:25px}h1{font-size:52px}.lead{font-size:18px}.hero-actions{align-items:flex-start;flex-direction:column}section{padding:74px 0}.strip .wrap{align-items:flex-start;flex-direction:column}.project-grid{grid-template-columns:1fr}.project img{height:230px}.stats{grid-template-columns:1fr}.case-copy,.contact-box{padding:28px}.feature-case img{min-height:300px}footer .wrap{flex-direction:column}}
-  </style>
+  <meta name="description" content="Plotbird provides aerial mapping, photogrammetry, rural imagery and property media across Canterbury." />
+  <meta name="theme-color" content="#f5f3ea" />
+  <link rel="canonical" href="https://plotbird.co.nz/" />
+  <meta property="og:title" content="Plotbird | Aerial Mapping & Property Imagery" />
+  <meta property="og:description" content="Aerial mapping, photogrammetry, rural imagery and property media across Christchurch and Canterbury." />
+  <meta property="og:url" content="https://plotbird.co.nz/" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#top">PLOT<b>BIRD</b></a>
-    <nav class="links">
-      <a href="#services">Services</a><a href="#examples">Examples</a><a href="#about">About</a><a class="btn" href="#contact">Get a quote</a>
-    </nav>
-  </div>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Christchurch & Canterbury</p>
-        <h1>See the whole property.</h1>
-        <p class="lead">Clear aerial maps, 3D property models and useful imagery for landowners, farms, agents and small projects.</p>
-        <div class="hero-actions"><a class="btn" href="#contact">Tell me about your site</a><a class="text-link" href="#services">See what Plotbird does ↘</a></div>
-        <div class="chips"><span>2D mapping</span><span>Photogrammetry</span><span>Aerial photo + video</span></div>
-      </div>
-      <div>
-        <div class="photo">
-          <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/scruttons-road-farm-large-area-orthophoto.jpg" alt="Aerial orthomosaic of Scruttons Road farm">
-          <div class="badge b1"><strong>10.94 ha</strong><span>mapped area</span></div>
-          <div class="badge b2"><strong>3.2 cm/px</strong><span>orthomosaic resolution</span></div>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#top" aria-label="Plotbird home">
+        <img src="assets/plotbird-logo.svg" alt="Plotbird" />
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#examples">Examples</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="button button-small">Get a quote</a>
+      </nav>
+      <button class="menu-button" aria-expanded="false" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="contours contours-one" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Christchurch & Canterbury</p>
+          <h1>See the whole property.</h1>
+          <p class="hero-lead">Clear aerial maps, 3D property models and useful imagery for landowners, farms, agents and small projects.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Tell me about your site</a>
+            <a class="text-link" href="#services">See what Plotbird does <span>↘</span></a>
+          </div>
+          <div class="hero-notes" aria-label="Key services">
+            <span>2D mapping</span>
+            <span>Photogrammetry</span>
+            <span>Aerial photo + video</span>
+          </div>
         </div>
-        <p class="micro">Mapping example: Scruttons Road Farm · DJI Mini 3 + WebODM</p>
+
+        <div class="hero-visual" aria-label="Scruttons Road aerial mapping example">
+          <div class="map-card photo-card">
+            <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/scruttons-road-farm-large-area-orthophoto.jpg" alt="Aerial orthomosaic of Scruttons Road farm near Christchurch" />
+            <div class="map-badge badge-top"><strong>10.94 ha</strong><span>mapped area</span></div>
+            <div class="map-badge badge-bottom"><strong>3.2 cm/px</strong><span>orthomosaic resolution</span></div>
+          </div>
+          <p class="microcopy">Mapping example: Scruttons Road Farm · DJI Mini 3 + WebODM</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <div class="strip"><div class="wrap"><p>Useful outputs. Straightforward jobs. No giant consultancy attached.</p><div class="chips" style="margin:0"><span>Property</span><span>Rural</span><span>Real estate</span><span>Small sites</span></div></div></div>
+    </section>
 
-  <section id="services">
-    <div class="wrap">
-      <div class="heading"><div><p class="eyebrow">Services</p><h2>A small, focused aerial toolkit.</h2></div><p>Plotbird is built for jobs where a clear view from above is genuinely useful, without turning every project into a full surveying exercise.</p></div>
-      <div class="services">
-        <article class="card feature"><h3>2D aerial mapping</h3><p>High-overlap drone imagery stitched into a detailed orthomosaic of your property, paddock or site.</p><ul><li>Property overview maps</li><li>Farm and block documentation</li><li>Visual site records</li></ul></article>
-        <article class="card"><h3>3D property models</h3><p>Photogrammetry captures that turn a real property or structure into a navigable 3D model.</p><ul><li>Buildings and sites</li><li>Existing-condition records</li><li>Shareable visual models</li></ul></article>
-        <article class="card"><h3>Rural imagery</h3><p>Clean aerial photography for farms, lifestyle blocks and landowners who want to show or document the whole property.</p><ul><li>Farm overviews</li><li>Buildings and assets</li><li>Seasonal or progress imagery</li></ul></article>
-        <article class="card"><h3>Property photo + video</h3><p>Simple, polished aerial stills and short video clips for listings, websites and property marketing.</p><ul><li>Real estate aerials</li><li>Short video sequences</li><li>Web and social-ready files</li></ul></article>
+    <section class="trust-strip">
+      <div class="wrap trust-grid">
+        <p>Useful outputs. Straightforward jobs. No giant consultancy attached.</p>
+        <div class="trust-tags"><span>Property</span><span>Rural</span><span>Real estate</span><span>Small sites</span></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="examples" id="examples">
-    <div class="wrap">
-      <div class="heading"><div><p class="eyebrow">Mapping examples</p><h2>Real flights. Real outputs.</h2></div><p>Existing Christchurch portfolio projects using the same workflow Plotbird is built around: planned capture, photogrammetry processing and useful mapped outputs.</p></div>
-      <article class="feature-case">
-        <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/scruttons-road-comparison-mapped.jpg" alt="Scruttons Road farm orthomosaic with mapped paddock boundaries">
-        <div class="case-copy"><p class="eyebrow" style="color:#afc488">Scruttons Road Farm</p><h3>10.94 hectares turned into a practical farm map.</h3><p>A broad-coverage flight was processed into a connected orthomosaic, then paddock boundaries were digitised to create a readable property-wide planning layer.</p><div class="stats"><div><strong>189</strong><span>photos captured</span></div><div><strong>10.94 ha</strong><span>area mapped</span></div><div><strong>3.2 cm/px</strong><span>resolution</span></div></div></div>
-      </article>
-      <div class="project-grid">
-        <article class="project"><img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/scruttons-road-farm-detailed-orthophoto.jpg" alt="High-detail Scruttons Road orthomosaic"><div><h3>Scruttons Road</h3><p>2.73 ha · 174 images · 1.1 cm/px</p></div></article>
-        <article class="project"><img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/estuary-shoreline-orthophoto.jpg" alt="Estuary shoreline orthomosaic"><div><h3>Estuary shoreline</h3><p>210 images · 1.1 cm/px · 100 m AGL</p></div></article>
-        <article class="project"><img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/jellicoe-street-orthophoto.jpg" alt="Jellicoe Street urban orthomosaic"><div><h3>Jellicoe Street</h3><p>165 images · 0.9 cm/px · 80 m AGL</p></div></article>
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Services</p><h2>A small, focused aerial toolkit.</h2></div>
+          <p>Plotbird is built for jobs where a clear view from above is genuinely useful, without turning every project into a full surveying exercise.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card featured">
+            <div class="service-number">01</div>
+            <h3>2D aerial mapping</h3>
+            <p>High-overlap drone imagery stitched into a detailed orthomosaic of your property, paddock or site.</p>
+            <ul><li>Property overview maps</li><li>Farm and block documentation</li><li>Visual site records</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">02</div>
+            <h3>3D property models</h3>
+            <p>Photogrammetry captures that turn a real property or structure into a navigable 3D model.</p>
+            <ul><li>Buildings and sites</li><li>Existing-condition records</li><li>Shareable visual models</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <h3>Rural imagery</h3>
+            <p>Clean aerial photography for farms, lifestyle blocks and landowners who want to show or document the whole property.</p>
+            <ul><li>Farm overviews</li><li>Buildings and assets</li><li>Seasonal or progress imagery</li></ul>
+          </article>
+          <article class="service-card">
+            <div class="service-number">04</div>
+            <h3>Property photo + video</h3>
+            <p>Simple, polished aerial stills and short video clips for listings, websites and property marketing.</p>
+            <ul><li>Real estate aerials</li><li>Short video sequences</li><li>Web and social-ready files</li></ul>
+          </article>
+        </div>
       </div>
-      <p style="font-size:12px;color:#767e79;margin-top:16px">Portfolio examples. Not represented as licensed cadastral or engineering survey work.</p>
+    </section>
+
+    <section class="section examples-section" id="examples">
+      <div class="wrap">
+        <div class="section-heading examples-heading">
+          <div><p class="eyebrow">Mapping examples</p><h2>Real flights. Real outputs.</h2></div>
+          <p>These are existing portfolio projects around Christchurch, using the same mapping workflow Plotbird is built around: planned image capture, photogrammetry processing and useful mapped outputs.</p>
+        </div>
+
+        <article class="case-feature">
+          <div class="case-image-wrap">
+            <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/scruttons-road-comparison-mapped.jpg" alt="Scruttons Road farm orthomosaic with mapped paddock boundaries" loading="lazy" />
+          </div>
+          <div class="case-copy">
+            <p class="eyebrow">Scruttons Road Farm</p>
+            <h3>10.94 hectares turned into a practical farm map.</h3>
+            <p>A broad-coverage flight was processed into a connected orthomosaic, then paddock boundaries were digitised to create a readable property-wide planning layer.</p>
+            <div class="case-stats">
+              <div><strong>189</strong><span>photos captured</span></div>
+              <div><strong>10.94 ha</strong><span>area mapped</span></div>
+              <div><strong>3.2 cm/px</strong><span>output resolution</span></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/scruttons-road-farm-detailed-orthophoto.jpg" alt="High-detail Scruttons Road farm orthomosaic" loading="lazy" />
+            <div class="project-copy"><p class="project-kicker">High-detail mapping</p><h3>Scruttons Road</h3><p>2.73 ha · 174 images · 1.1 cm/px</p></div>
+          </article>
+          <article class="project-card">
+            <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/estuary-shoreline-orthophoto.jpg" alt="Estuary shoreline orthomosaic at South New Brighton Park" loading="lazy" />
+            <div class="project-copy"><p class="project-kicker">Shoreline mapping</p><h3>Estuary shoreline</h3><p>210 images · 1.1 cm/px · 100 m AGL</p></div>
+          </article>
+          <article class="project-card">
+            <img src="https://raw.githubusercontent.com/tfinn9/tom-finn-drone-mapping-portfolio/main/public/images/jellicoe-street-orthophoto.jpg" alt="Jellicoe Street urban orthomosaic" loading="lazy" />
+            <div class="project-copy"><p class="project-kicker">Urban mapping</p><h3>Jellicoe Street</h3><p>165 images · 0.9 cm/px · 80 m AGL</p></div>
+          </article>
+        </div>
+        <p class="portfolio-note">Portfolio examples, not represented as licensed cadastral or engineering survey work.</p>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="work">
+      <div class="contours contours-two" aria-hidden="true"></div>
+      <div class="wrap outcome-grid">
+        <div>
+          <p class="eyebrow light">What you get</p>
+          <h2>Something you can actually use afterwards.</h2>
+          <p class="dark-lead">The point isn’t the drone flight. It’s the map, model, photo set or footage you needed from it.</p>
+        </div>
+        <div class="outcome-list">
+          <div class="outcome"><span>01</span><div><h3>Clear deliverables</h3><p>Files supplied in useful formats, with the job scoped before flying.</p></div></div>
+          <div class="outcome"><span>02</span><div><h3>Small-job friendly</h3><p>Good fit for individual properties and practical one-off projects.</p></div></div>
+          <div class="outcome"><span>03</span><div><h3>Local & straightforward</h3><p>Based in Christchurch and focused on Canterbury work.</p></div></div>
+          <div class="outcome"><span>04</span><div><h3>No survey theatre</h3><p>If you need a licensed cadastral or engineering survey, Plotbird will say so rather than pretend a drone map is one.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="wrap about-grid">
+        <div class="about-mark" aria-hidden="true">
+          <div class="bird-disc">
+            <span class="bird-wing wing-a"></span><span class="bird-wing wing-b"></span><span class="bird-wing wing-c"></span>
+            <span class="bird-body"></span><span class="bird-head"></span><span class="bird-beak"></span>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About Plotbird</p>
+          <h2>Small by design.</h2>
+          <p>Plotbird is a Christchurch-based aerial mapping and imagery service for property-sized jobs. The focus is simple: useful outputs, sensible scope, and work that doesn’t need an enterprise sales call attached to it.</p>
+          <p>That might mean mapping a lifestyle block, building a 3D model of a property, documenting a farm from above, or capturing clean aerial media for a listing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="wrap contact-card">
+        <div>
+          <p class="eyebrow">Start with the site</p>
+          <h2>Got a property in mind?</h2>
+          <p>Send the location, roughly what you want captured, and what you need the final output for. That’s usually enough to work out whether Plotbird is a fit.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button" href="mailto:plotbirdnz@gmail.com?subject=Plotbird%20project%20enquiry">Email Plotbird</a>
+          <p class="contact-note">plotbirdnz@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="footer-brand"><img src="assets/plotbird-logo.svg" alt="Plotbird" /><p>Aerial mapping & property imagery.</p></div>
+      <div class="footer-copy"><p>Christchurch, Canterbury, New Zealand</p><p>© <span id="year"></span> Plotbird</p></div>
     </div>
-  </section>
+  </footer>
 
-  <section class="dark">
-    <div class="wrap outcomes">
-      <div><p class="eyebrow" style="color:#afc488">What you get</p><h2>Something you can actually use afterwards.</h2><p>The point isn’t the drone flight. It’s the map, model, photo set or footage you needed from it.</p></div>
-      <div><div class="outcome"><h3>Clear deliverables</h3><p>Files supplied in useful formats, with the job scoped before flying.</p></div><div class="outcome"><h3>Small-job friendly</h3><p>Good fit for individual properties and practical one-off projects.</p></div><div class="outcome"><h3>Local & straightforward</h3><p>Based in Christchurch and focused on Canterbury work.</p></div><div class="outcome"><h3>No survey theatre</h3><p>If you need a licensed cadastral or engineering survey, Plotbird will say so rather than pretend a drone map is one.</p></div></div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="wrap about-grid"><div class="mark"><span>PB</span></div><div><p class="eyebrow">About Plotbird</p><h2>Small by design.</h2><p>Plotbird is a Christchurch-based aerial mapping and imagery service for property-sized jobs. The focus is simple: useful outputs, sensible scope, and work that doesn’t need an enterprise sales call attached to it.</p><p>That might mean mapping a lifestyle block, building a 3D model of a property, documenting a farm from above, or capturing clean aerial media for a listing.</p></div></div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap contact-box"><div><p class="eyebrow">Start with the site</p><h2>Got a property in mind?</h2><p>Send the location, roughly what you want captured, and what you need the final output for. That’s usually enough to work out whether Plotbird is a fit.</p></div><div><a class="btn" href="mailto:plotbirdnz@gmail.com?subject=Plotbird%20project%20enquiry">Email Plotbird</a><div class="email">plotbirdnz@gmail.com</div></div></div>
-  </section>
-</main>
-<footer><div class="wrap"><div><strong>PLOTBIRD</strong><br>Aerial mapping & property imagery.</div><div>Christchurch, Canterbury, New Zealand<br>© <span id="year"></span> Plotbird</div></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script src="script.js"></script>
 </body>
 </html>
