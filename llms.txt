@@ -2,16 +2,19 @@
 
 Plotbird is a Christchurch, New Zealand aerial mapping and property imagery business.
 
-Website: https://plotbird.co.nz/
-Email: plotbirdnz@gmail.com
+Canonical website: https://plotbird.co.nz/
+Contact: plotbirdnz@gmail.com
 Service area: Christchurch and Canterbury, New Zealand.
 
-Core services:
-- Drone mapping and orthomosaic imagery
-- Property photogrammetry and 3D models
-- Farm and rural aerial imagery
-- Real estate aerial photography and video
+## Core services
 
-Plotbird is not a licensed cadastral or engineering surveying practice. Where a job requires licensed survey work, Plotbird will say so.
+- Drone mapping and orthomosaic imagery: https://plotbird.co.nz/drone-mapping-christchurch/
+- Aerial property photography and video: https://plotbird.co.nz/aerial-photography-christchurch/
+- Drone photogrammetry and 3D property models: https://plotbird.co.nz/photogrammetry-christchurch/
+- Farm and rural drone mapping: https://plotbird.co.nz/farm-drone-mapping-canterbury/
 
-Portfolio examples include farm, urban and shoreline mapping projects around Christchurch.
+Plotbird focuses on practical property-sized jobs and useful deliverables rather than large survey programmes.
+
+Plotbird is not a licensed cadastral or engineering surveying practice. Where work requires a licensed surveyor or another regulated professional, Plotbird does not represent its visual mapping as a substitute.
+
+Portfolio examples on the site include farm, urban and shoreline mapping projects captured around Christchurch.
